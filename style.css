@@ -1,0 +1,73 @@
+/*
+Color theme from accessible colors bot on Mastodon:
+https://botsin.space/@accessibleColors
+*/
+@media screen {
+	body {
+		background-color: #FBE7B0;
+		max-width: 800px;
+		margin-left: 0px;
+		margin-right: 0;
+	}
+
+	p {
+		margin-left: 20px;
+		margin-right: 5px;
+		font-size: 12pt;
+	}
+
+	h1, h2, h3, h4, h5 {
+		background-color: #0E784C;
+		clear: both;
+		color: #FBE7B0;
+		font-family: sans-serif;
+		padding-left: 10px;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	figure {
+		float: right;
+		clear: both;
+		margin-left: 10px;
+		margin-right: 6px;
+		max-width: 225px;
+		padding: 5px;
+		outline-color: #0E784C;
+		outline-style: solid;
+	}
+
+	/* Dimensions for images which are children of figures. */
+	figure > img {
+		max-height: 300px;
+		max-width: 225px;
+	}
+
+	figcaption {
+		font-size: 10pt;
+	}
+
+	/*
+	Horizontal rules must be above or below any floating elements.
+	This prevents the footer from being mixed in with any of
+	the page content.
+	*/
+	hr {
+		clear: both;
+	}
+}
+
+@media all {
+	ol {
+		list-style: lower-alpha;
+	}
+
+	/*
+	Italicize all spans set to Latin.
+	*/
+	span:lang(la) {
+		font-style: italic;
+	}
+}
